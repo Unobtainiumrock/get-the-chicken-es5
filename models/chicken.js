@@ -1,14 +1,14 @@
 
-const orm = require('../config/orm');
+var orm = require('../config/orm');
 
-const chicken = {
-  selectAll: () => {
-
-  },
-  insertOne: () => {
+var chicken = {
+  selectAll: function() {
 
   },
-  updateOne: () => {
+  insertOne: function() {
+
+  },
+  updateOne: function() {
 
   }
 }
