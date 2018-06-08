@@ -1,23 +1,17 @@
 
-const connection = require('./connection');
+var connection = require('./connection');
 
-const orm = {
-  selectAll: () => {
+var orm = {
+  selectAll: function() {
     
   },
-  insertOne: () => {
+  insertOne: function() {
     
   },
-  updateOne: () => {
+  updateOne: function() {
     
   }
 }
 
 
 module.exports = orm;
-
-// connection.query('SELECT * FROM chickens where ?', { id: 1 })
-//   .then(data => {
-//     console.log(data);
-//   })
-
