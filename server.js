@@ -1,10 +1,10 @@
 
-const express = require('express');
-const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 8080;
+var express = require('express');
+var bodyParser = require('body-parser');
+var PORT = process.env.PORT || 8080;
 
 //Start express
-const app = express();
+var app = express();
 
 // Serve static content
 app.use(express.static('public'));
@@ -13,4 +13,4 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.listen(PORT,() => console.log(`listening on  ${PORT}`));
+app.listen(PORT, function(){console.log('listening on' + PORT)});
