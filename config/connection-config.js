@@ -1,6 +1,6 @@
 
 // Config to be passed to the instance of MySQL's connection in connections.js
-const config = {
+var config = {
   host: 'localhost',
   user: 'root',
   password: '',
