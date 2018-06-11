@@ -7,5 +7,6 @@ CREATE TABLE chickens (
   id INTEGER AUTO_INCREMENT,
   chicken_name VARCHAR(30) NOT NULL,
   devoured BOOLEAN,
+  img VARCHAR(50) NOT NULL,
   PRIMARY KEY (id)
 );

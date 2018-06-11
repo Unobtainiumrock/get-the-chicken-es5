@@ -1,0 +1,13 @@
+<li>
+  {{name}}
+  <img src="{{img}}" height="200px" width="200px">
+  <h1>Name: {{chicken_name}}</h1>
+  <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+    {{#if devoured}}LETS FEAST!!{{else}}UGH I DONT FEEL SO GOOD BUAWWH!{{/if}}
+  </button>
+
+  <button class="destroy-chicken" data-id="{{id}}">
+    DESTROY CHICKEN!!
+  </button>
+
+</li>

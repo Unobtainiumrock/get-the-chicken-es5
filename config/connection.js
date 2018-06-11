@@ -1,5 +1,5 @@
 
-var mysql = require('mysql2');
+var mysql = require('mysql');
 var config = require('./connection-config');
 
 var connection = mysql.createConnection(config);
