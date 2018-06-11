@@ -46,7 +46,7 @@
 
 // // module.exports = new Connection(config);
 // module.exports = connection;
-var msql = require('mysql');
+var mysql = require('mysql');
 var connection;
 var JAWSDB_URL = "mysql://r64k0qq5l871t1c4:t4lvasrez89f0c9w@qzkp8ry756433yd4.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nm8ychixahn6dspd";
 
