@@ -52,7 +52,7 @@ var JAWSDB_URL = "mysql://r64k0qq5l871t1c4:t4lvasrez89f0c9w@qzkp8ry756433yd4.cbe
 
 
 
-if ( JAWSDB_URL) {
+if ( process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
 connection = mysql.createConnection({
