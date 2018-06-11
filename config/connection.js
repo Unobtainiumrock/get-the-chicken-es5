@@ -52,15 +52,15 @@ var JAWSDB_URL = "mysql://r64k0qq5l871t1c4:t4lvasrez89f0c9w@qzkp8ry756433yd4.cbe
 
 
 
-if ( process.env.JAWSDB_URL) {
+if ( JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
 connection = mysql.createConnection({
         host: "localhost",
         port: 3306,
         user: "root",
-        password: "password",
-        database: "icecream_db"
+        password: "",
+        database: "chickens_db"
       });
 }
 module.exports = connection;
