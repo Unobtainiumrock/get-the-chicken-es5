@@ -2,7 +2,14 @@
 var mysql = require('mysql');
 var config = require('./connection-config');
 
-var connection = mysql.createConnection(config);
+
+if (process.env.JAWS) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  var connection = mysql.createConnection(config);
+}
+
+
 
 //********** IN CASE I GET THE GREEN LIGHT FOR PROMISES ******************/
 
