@@ -1,7 +1,7 @@
 
 // Config to be passed to the instance of MySQL's connection in connections.js
 const config = {
-  host: 'localhost',
+  host: process.env.HOST || 'localhost',
   user: 'root',
   password: '',
   database: 'chickens_db'
